@@ -1,0 +1,45 @@
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/workshop.png);
+  background-size: contain;
+  margin: auto
+}
+h1 {
+  text-transform: uppercase;
+}
+.container {
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #b7b399;
+  padding: 10px;
+  text-align: center;
+}
+.containerBody {
+  display: grid;
+  grid-template-areas:
+    "intro intro"
+    "instructor venue";
+  grid-template-columns: 2fr 2fr;
+  gap: 15px;
+  background-color: #b7b399;
+  padding: 10px;
+  text-align: left;
+}
+.containerBody > div {
+  background-color: #757366;
+  color: rgb(222, 226, 230);
+  padding: 10px;
+}
+
+.containerBody > div.intro {
+  grid-area: intro;
+  font-weight: bold;
+}
+.containerBody > div.venue {
+  grid-area: venue;
+}
+.containerBody > div.instructor {
+  grid-area: instructor;
+}
